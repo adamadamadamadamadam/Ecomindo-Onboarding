@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ab0Cr2GkaB+U3bflNm438s1m8YtkUfwwWIhC6GaHlQKZjSiXxnnogtp5innUYjmwSqAVUN196z4oFlIwIr8lVA==",
+  "success": true,
+  "projectFilePath": "D:\\Kerja\\Onboarding NET\\OnboardingApp\\OnboardingApp\\OnboardingApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Win10\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Win10\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
