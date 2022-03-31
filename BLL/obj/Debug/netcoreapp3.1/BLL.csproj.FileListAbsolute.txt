@@ -1,0 +1,16 @@
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.AssemblyReference.cache
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\obj\Debug\netcoreapp3.1\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CoreCompileInputs.cache
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\bin\Debug\netcoreapp3.1\BLL.deps.json
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\bin\Debug\netcoreapp3.1\BLL.runtimeconfig.json
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\bin\Debug\netcoreapp3.1\BLL.runtimeconfig.dev.json
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\bin\Debug\netcoreapp3.1\BLL.dll
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\bin\Debug\netcoreapp3.1\BLL.pdb
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\bin\Debug\netcoreapp3.1\DAL.dll
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\bin\Debug\netcoreapp3.1\DAL.pdb
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\obj\Debug\netcoreapp3.1\BLL.dll
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\obj\Debug\netcoreapp3.1\BLL.pdb
+D:\Kerja\Onboarding NET\OnboardingApp\BLL\obj\Debug\netcoreapp3.1\BLL.genruntimeconfig.cache

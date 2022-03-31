@@ -63,5 +63,14 @@ D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Micr
 D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\obj\Debug\netcoreapp3.1\OnboardingApp.MvcApplicationPartsAssemblyInfo.cs
 D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Quartz.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Azure.Core.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Azure.Core.Amqp.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Azure.Messaging.EventHubs.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Microsoft.Azure.Amqp.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\System.Memory.Data.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\BLL.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\DAL.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\BLL.pdb
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\DAL.pdb

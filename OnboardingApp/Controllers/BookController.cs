@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
+using BLL.Service;
+using DAL.Interface;
+using DAL.Model;
 using Microsoft.AspNetCore.Mvc;
 using OnboardingApp.DTO;
-using OnboardingApp.Interface;
-using OnboardingApp.Model;
-using OnboardingApp.Service;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace OnboardingApp.Controllers
@@ -38,7 +39,7 @@ namespace OnboardingApp.Controllers
         {
             var res = await service.GetAllBook();
 
-            return new OkObjectResult(res);
+            return new OkObjectResult(_mapper.Map<List<BookDTO>>(res));
         }
 
         [HttpGet("{id}")]
@@ -46,13 +47,13 @@ namespace OnboardingApp.Controllers
         {
             var res = await service.GetByID(id);
 
-            return new OkObjectResult(res);
+            return new OkObjectResult(_mapper.Map<BookDTO>(res));
         }
 
         [HttpPut]
         public async Task<ActionResult> UpdateAsync([FromBody] BookDTO input)
         {
-            await service.Update(input);
+            await service.Update(_mapper.Map<Book>(input));
 
             return new OkResult();
         }
@@ -60,7 +61,7 @@ namespace OnboardingApp.Controllers
         [HttpPost]
         public async Task<ActionResult> AddAsync([FromBody] BookDTO input)
         {
-            await service.AddAsync(input);
+            await service.AddAsync(_mapper.Map<Book>(input));
             return new OkResult();
         }
 

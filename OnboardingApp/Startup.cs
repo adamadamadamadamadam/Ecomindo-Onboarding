@@ -6,14 +6,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using OnboardingApp.Model;
-using OnboardingApp.Repository;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using OnboardingApp.Interface;
+using DAL.Interface;
+using DAL.Repository;
+using DAL.Model;
 
 namespace OnboardingApp
 {
@@ -32,7 +32,6 @@ namespace OnboardingApp
             services.AddControllers();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddHostedService<Scheduler>();
-            services.AddTransient<TestJob>();
             services.AddDbContext<PerpustakaanDBContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
                 );

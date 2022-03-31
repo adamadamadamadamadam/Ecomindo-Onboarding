@@ -1,11 +1,10 @@
 ﻿using AutoMapper;
+using DAL.Interface;
+using DAL.Model;
+using DLL.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using OnboardingApp.DTO;
-using OnboardingApp.Interface;
-using OnboardingApp.Model;
-using OnboardingApp.Repository;
-using OnboardingApp.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,7 +46,7 @@ namespace OnboardingApp.Controllers
         {
             var res = await service.GetAllBorrower();
 
-            return new OkObjectResult(res);
+            return new OkObjectResult(_mapper.Map<List<BorrowerDTO>>(res));
         }
 
         [HttpGet("{id}")]
@@ -55,13 +54,13 @@ namespace OnboardingApp.Controllers
         {
             var res = await service.GetByID(id);
 
-            return new OkObjectResult(res);
+            return new OkObjectResult(_mapper.Map<BorrowerDTO>(res));
         }
 
         [HttpPut]
         public async Task<ActionResult> UpdateAsync([FromBody] BorrowerDTO input)
         {
-            await service.Update(input);
+            await service.Update(_mapper.Map<Borrower>(input));
 
             return new OkResult();
         }
@@ -69,7 +68,7 @@ namespace OnboardingApp.Controllers
         [HttpPost]
         public async Task<ActionResult> AddAsync([FromBody]BorrowerDTO input)
         {
-            await service.AddAsync(input);
+            await service.AddAsync(_mapper.Map<Borrower>(input));
             return new OkResult();
         }
 
