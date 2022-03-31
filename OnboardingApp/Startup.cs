@@ -31,6 +31,8 @@ namespace OnboardingApp
         {
             services.AddControllers();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddHostedService<Scheduler>();
+            services.AddTransient<TestJob>();
             services.AddDbContext<PerpustakaanDBContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
                 );

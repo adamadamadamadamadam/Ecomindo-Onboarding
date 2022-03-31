@@ -64,3 +64,4 @@ D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Swas
 D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\obj\Debug\netcoreapp3.1\OnboardingApp.MvcApplicationPartsAssemblyInfo.cs
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Quartz.dll
