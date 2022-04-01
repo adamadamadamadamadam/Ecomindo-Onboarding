@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using DAL.Interface;
 using DAL.Repository;
 using DAL.Model;
+using BLL.Service;
 
 namespace OnboardingApp
 {
@@ -32,6 +33,7 @@ namespace OnboardingApp
             services.AddControllers();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddHostedService<Scheduler>();
+            services.AddHostedService<MessageReceiver>();
             services.AddDbContext<PerpustakaanDBContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
                 );

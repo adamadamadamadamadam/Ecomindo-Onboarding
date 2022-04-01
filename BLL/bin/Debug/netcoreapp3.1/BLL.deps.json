@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoMapper": "11.0.1",
           "Azure.Messaging.EventHubs": "5.6.2",
+          "Azure.Messaging.EventHubs.Processor": "5.6.2",
           "DAL": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.23",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.23",
@@ -76,6 +77,48 @@
           "lib/netstandard2.0/Azure.Messaging.EventHubs.dll": {
             "assemblyVersion": "5.6.2.0",
             "fileVersion": "5.600.221.50501"
+          }
+        }
+      },
+      "Azure.Messaging.EventHubs.Processor/5.6.2": {
+        "dependencies": {
+          "Azure.Core": "1.20.0",
+          "Azure.Messaging.EventHubs": "5.6.2",
+          "Azure.Storage.Blobs": "12.8.0",
+          "Microsoft.Azure.Amqp": "2.5.6",
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "System.Diagnostics.DiagnosticSource": "4.7.1",
+          "System.Reflection.TypeExtensions": "4.5.1",
+          "System.Threading.Channels": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Messaging.EventHubs.Processor.dll": {
+            "assemblyVersion": "5.6.2.0",
+            "fileVersion": "5.600.221.50505"
+          }
+        }
+      },
+      "Azure.Storage.Blobs/12.8.0": {
+        "dependencies": {
+          "Azure.Storage.Common": "12.7.0",
+          "System.Text.Json": "4.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Blobs.dll": {
+            "assemblyVersion": "12.8.0.0",
+            "fileVersion": "12.800.21.6201"
+          }
+        }
+      },
+      "Azure.Storage.Common/12.7.0": {
+        "dependencies": {
+          "Azure.Core": "1.20.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Common.dll": {
+            "assemblyVersion": "12.7.0.0",
+            "fileVersion": "12.700.21.6201"
           }
         }
       },
@@ -1371,6 +1414,27 @@
       "sha512": "sha512-1pnIj/Kw/ABiIGiU0yeZ2N4Mafo/AgGM68+nn6iWfFhz02ahGDAzLcK7qBDeqxm5YQHbNVhdw/fzqUfxJNf91A==",
       "path": "azure.messaging.eventhubs/5.6.2",
       "hashPath": "azure.messaging.eventhubs.5.6.2.nupkg.sha512"
+    },
+    "Azure.Messaging.EventHubs.Processor/5.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wbgdQDwk+80lzUOkT2TmiTouWaBk+S17DkBzh405OFdfTX/PLniCDT9sziOlHSFGXKL+sjEcPDBFIFi7ZqbMng==",
+      "path": "azure.messaging.eventhubs.processor/5.6.2",
+      "hashPath": "azure.messaging.eventhubs.processor.5.6.2.nupkg.sha512"
+    },
+    "Azure.Storage.Blobs/12.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LrnOTVdRk2n8obV8Z0R7ZpuFd6SlyxPiX4+M4TyCKbFEJlTPAStewqrXHr4JMDJYzn+b5sr1CMsz75CoHYabhg==",
+      "path": "azure.storage.blobs/12.8.0",
+      "hashPath": "azure.storage.blobs.12.8.0.nupkg.sha512"
+    },
+    "Azure.Storage.Common/12.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w2hcSk80NbkUIvb0x81zYAvpx7RzhRVJjWterjYpEI9DRNLoqxap3b7LOSnLfcA5jgSVaeKlOZzneUrXx7+wnA==",
+      "path": "azure.storage.common/12.7.0",
+      "hashPath": "azure.storage.common.12.7.0.nupkg.sha512"
     },
     "Microsoft.Azure.Amqp/2.5.6": {
       "type": "package",

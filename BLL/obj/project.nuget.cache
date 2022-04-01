@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BsRUEx1GVZdwCwd4RcyllOjMvuyYDoKmxm7PXXhGswc4n1qEUDy1eJnKFHv7gdlSSItiBsHc1TwxP1dbsC8OeA==",
+  "dgSpecHash": "TRpSO7GAArh+HJoBZbo32OsT2FwwFVdL2Ha3X0QbsYE+o6wvni+BLba4OFeCIOj1a7+bLFhseJC60vj+h912NA==",
   "success": true,
   "projectFilePath": "D:\\Kerja\\Onboarding NET\\OnboardingApp\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\Win10\\.nuget\\packages\\azure.core\\1.20.0\\azure.core.1.20.0.nupkg.sha512",
     "C:\\Users\\Win10\\.nuget\\packages\\azure.core.amqp\\1.2.0\\azure.core.amqp.1.2.0.nupkg.sha512",
     "C:\\Users\\Win10\\.nuget\\packages\\azure.messaging.eventhubs\\5.6.2\\azure.messaging.eventhubs.5.6.2.nupkg.sha512",
+    "C:\\Users\\Win10\\.nuget\\packages\\azure.messaging.eventhubs.processor\\5.6.2\\azure.messaging.eventhubs.processor.5.6.2.nupkg.sha512",
+    "C:\\Users\\Win10\\.nuget\\packages\\azure.storage.blobs\\12.8.0\\azure.storage.blobs.12.8.0.nupkg.sha512",
+    "C:\\Users\\Win10\\.nuget\\packages\\azure.storage.common\\12.7.0\\azure.storage.common.12.7.0.nupkg.sha512",
     "C:\\Users\\Win10\\.nuget\\packages\\microsoft.azure.amqp\\2.5.6\\microsoft.azure.amqp.2.5.6.nupkg.sha512",
     "C:\\Users\\Win10\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Win10\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

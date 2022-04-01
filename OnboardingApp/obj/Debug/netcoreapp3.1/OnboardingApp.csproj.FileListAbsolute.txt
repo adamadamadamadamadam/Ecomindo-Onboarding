@@ -74,3 +74,7 @@ D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\BLL.
 D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\DAL.dll
 D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\BLL.pdb
 D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\DAL.pdb
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Azure.Messaging.EventHubs.Processor.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Azure.Storage.Blobs.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\bin\Debug\netcoreapp3.1\Azure.Storage.Common.dll
+D:\Kerja\Onboarding NET\OnboardingApp\OnboardingApp\obj\Debug\netcoreapp3.1\OnboardingApp.MvcApplicationPartsAssemblyInfo.cs
