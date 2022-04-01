@@ -20,3 +20,12 @@ D:\Kerja\Onboarding NET\OnboardingApp\Messager\obj\Debug\netcoreapp3.1\Messager.
 D:\Kerja\Onboarding NET\OnboardingApp\Messager\obj\Debug\netcoreapp3.1\Messager.dll
 D:\Kerja\Onboarding NET\OnboardingApp\Messager\obj\Debug\netcoreapp3.1\Messager.pdb
 D:\Kerja\Onboarding NET\OnboardingApp\Messager\obj\Debug\netcoreapp3.1\Messager.genruntimeconfig.cache
+D:\Kerja\Onboarding NET\OnboardingApp\Messager\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Kerja\Onboarding NET\OnboardingApp\Messager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Kerja\Onboarding NET\OnboardingApp\Messager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Kerja\Onboarding NET\OnboardingApp\Messager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Kerja\Onboarding NET\OnboardingApp\Messager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+D:\Kerja\Onboarding NET\OnboardingApp\Messager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Kerja\Onboarding NET\OnboardingApp\Messager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Kerja\Onboarding NET\OnboardingApp\Messager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Kerja\Onboarding NET\OnboardingApp\Messager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll

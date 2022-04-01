@@ -1,6 +1,8 @@
 ﻿using Azure.Messaging.EventHubs;
 using Azure.Messaging.EventHubs.Producer;
+using Microsoft.Extensions.Configuration;
 using System;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace Messager
@@ -8,14 +10,20 @@ namespace Messager
     public class Program
     {
         // connection string to the Event Hubs namespace
-        private const string connectionString = "Endpoint=sb://onboarding-evennthub.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=O3fUmlNPjHkPGLzna3yLYsk5k2IMTn8vPwSqW7XMbOA=";
+        private static string _connectionString;
 
         // name of the event hub
-        private const string eventHubName = "onboarding-topic";
+        private static string _eventHubName;
 
         static async Task Main(string[] args)
         {
-            var producerClient = new EventHubProducerClient(connectionString, eventHubName);
+            IConfiguration config = new ConfigurationBuilder()
+               .AddJsonFile("appsettings.json", true, true)
+               .Build();
+
+            _connectionString = config["EventHub:ConnectionString"];
+            _eventHubName = config["EventHub:EventHubName"];
+            var producerClient = new EventHubProducerClient(_connectionString, _eventHubName);
 
             var eventBatch = await producerClient.CreateBatchAsync();
 
