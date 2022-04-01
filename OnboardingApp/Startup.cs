@@ -32,6 +32,7 @@ namespace OnboardingApp
         {
             services.AddControllers();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IRedisService, RedisService>();
             services.AddHostedService<Scheduler>();
             services.AddHostedService<MessageReceiver>();
             services.AddDbContext<PerpustakaanDBContext>(options =>

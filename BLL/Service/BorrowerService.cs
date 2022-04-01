@@ -6,16 +6,17 @@ using Microsoft.EntityFrameworkCore;
 using DAL.Interface;
 using DAL.Model;
 
-namespace DLL.Service
+namespace BLL.Service
 {
     public class BorrowerService
     {
         private IUnitOfWork unitOfWork;
+        private IRedisService redis;
 
-        public BorrowerService(IUnitOfWork uow)
+        public BorrowerService(IUnitOfWork uow, IRedisService red)
         {
             unitOfWork = uow;
-
+            redis = red;
         }
 
         public async Task<List<Borrower>> GetAllBorrower()
@@ -35,7 +36,14 @@ namespace DLL.Service
         {
             try
             {
-                var result = await unitOfWork.BorrowerRepository.GetAll().Include(b => b.Book).FirstOrDefaultAsync(b => b.Id == id);
+                Borrower result;
+
+                result = await redis.GetAsync<Borrower>($"book#{id}");
+
+                if (result == null) { 
+                    result = await unitOfWork.BorrowerRepository.GetAll().Include(b => b.Book).FirstOrDefaultAsync(b => b.Id == id);
+                    await redis.SetAsync($"book#{id}", result);
+                }
                 return result;
             }
             catch (Exception e)
@@ -51,6 +59,8 @@ namespace DLL.Service
                 await unitOfWork.BorrowerRepository.AddAsync(input);
 
                 await unitOfWork.SaveAsync();
+
+                await redis.SetAsync($"book#{input.Id}", input);
             }
             catch (Exception e)
             {
@@ -63,6 +73,8 @@ namespace DLL.Service
             unitOfWork.BorrowerRepository.Update(input);
 
             await unitOfWork.SaveAsync();
+
+            await redis.SetAsync($"book#{input.Id}", input);
         }
 
         public async Task Delete(int id)
@@ -72,6 +84,8 @@ namespace DLL.Service
                 unitOfWork.BorrowerRepository.Delete(b => b.Id == id);
 
                 await unitOfWork.SaveAsync();
+
+                await redis.DeleteAsync($"book#{id}");
             }
             catch (Exception e)
             {

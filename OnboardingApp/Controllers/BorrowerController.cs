@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
+using BLL.Service;
 using DAL.Interface;
 using DAL.Model;
-using DLL.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using OnboardingApp.DTO;
@@ -20,9 +20,9 @@ namespace OnboardingApp.Controllers
 
         private BorrowerService service;
 
-        public BorrowerController(IUnitOfWork uow)
+        public BorrowerController(IUnitOfWork uow, IRedisService redis)
         {
-            service = new BorrowerService(uow);
+            service = new BorrowerService(uow, redis);
 
             if (_mapper == null)
             {
