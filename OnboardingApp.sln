@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{5
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messager", "Messager\Messager.csproj", "{85A81C49-8BAB-4182-ACE7-E4995BF61F5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{5216677C-475C-4ED4-A0CD-0CC48B138C96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{5216677C-475C-4ED4-A0CD-0CC48B138C96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL.Test", "BLL.Test\BLL.Test.csproj", "{EC2F4774-82DE-40B0-9E6B-44EA4A066D46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5216677C-475C-4ED4-A0CD-0CC48B138C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5216677C-475C-4ED4-A0CD-0CC48B138C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5216677C-475C-4ED4-A0CD-0CC48B138C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC2F4774-82DE-40B0-9E6B-44EA4A066D46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC2F4774-82DE-40B0-9E6B-44EA4A066D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC2F4774-82DE-40B0-9E6B-44EA4A066D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC2F4774-82DE-40B0-9E6B-44EA4A066D46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
