@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "T4u9OGTp25292AsQvJM9wqUCtArzDaH3f39ZseIm8D40j5P80zYaMDOWMRHgplN7pxOlcqKxJmcYx4uQ59VYYw==",
+  "success": true,
+  "projectFilePath": "D:\\Kerja\\Onboarding NET\\OnboardingApp\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Win10\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
+    "C:\\Users\\Win10\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Win10\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Win10\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\Win10\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

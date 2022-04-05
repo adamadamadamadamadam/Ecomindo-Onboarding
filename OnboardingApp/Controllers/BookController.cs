@@ -2,6 +2,7 @@
 using BLL.Service;
 using DAL.Interface;
 using DAL.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OnboardingApp.DTO;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 namespace OnboardingApp.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("[controller]")]
     public class BookController : ControllerBase
     {

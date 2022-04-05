@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E9TtEwqdIYICIZBw/uvQU8g7kKtGsT1/t+K6ScS3GAemYP6SdvlCJqs7MF/FnihHmKoiMUiBIwO8tgBqIfyUcQ==",
+  "dgSpecHash": "E7/bXaJ0PYyaT0ZU+p0OIZRbl+qoMkimXSNv2Wy6/j6ymU2N6C1iIm5B+TYfqSkJLOZp8q99LiYf0O/2gVz1CA==",
   "success": true,
   "projectFilePath": "D:\\Kerja\\Onboarding NET\\OnboardingApp\\OnboardingApp\\OnboardingApp.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Win10\\.nuget\\packages\\azure.messaging.eventhubs.processor\\5.6.2\\azure.messaging.eventhubs.processor.5.6.2.nupkg.sha512",
     "C:\\Users\\Win10\\.nuget\\packages\\azure.storage.blobs\\12.8.0\\azure.storage.blobs.12.8.0.nupkg.sha512",
     "C:\\Users\\Win10\\.nuget\\packages\\azure.storage.common\\12.7.0\\azure.storage.common.12.7.0.nupkg.sha512",
+    "C:\\Users\\Win10\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.23\\microsoft.aspnetcore.authentication.jwtbearer.3.1.23.nupkg.sha512",
     "C:\\Users\\Win10\\.nuget\\packages\\microsoft.azure.amqp\\2.5.6\\microsoft.azure.amqp.2.5.6.nupkg.sha512",
     "C:\\Users\\Win10\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Win10\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

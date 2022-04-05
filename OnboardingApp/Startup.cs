@@ -15,6 +15,7 @@ using DAL.Interface;
 using DAL.Repository;
 using DAL.Model;
 using BLL.Service;
+using Microsoft.IdentityModel.Tokens;
 
 namespace OnboardingApp
 {
@@ -39,6 +40,25 @@ namespace OnboardingApp
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
                 );
             services.AddSwaggerGen();
+
+            services.AddAuthentication("Bearer")
+            .AddJwtBearer("Bearer", options =>
+            {
+                options.Authority = "https://localhost:5001";
+
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateAudience = false
+                };
+            });
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("ApiScope", policy =>
+                {
+                    policy.RequireAuthenticatedUser();
+                    policy.RequireClaim("scope", "api1");
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,11 +73,12 @@ namespace OnboardingApp
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllers().RequireAuthorization("ApiScope");
             });
 
             app.UseSwagger();
