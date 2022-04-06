@@ -16,6 +16,7 @@ using DAL.Repository;
 using DAL.Model;
 using BLL.Service;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.IdentityModel.Logging;
 
 namespace OnboardingApp
 {
@@ -31,6 +32,8 @@ namespace OnboardingApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            IdentityModelEventSource.ShowPII = true;
+
             services.AddControllers();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IRedisService, RedisService>();
@@ -44,7 +47,7 @@ namespace OnboardingApp
             services.AddAuthentication("Bearer")
             .AddJwtBearer("Bearer", options =>
             {
-                options.Authority = "https://localhost:5001";
+                options.Authority = "https://127.0.0.1:49165";
 
                 options.TokenValidationParameters = new TokenValidationParameters
                 {

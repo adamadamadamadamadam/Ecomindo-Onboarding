@@ -12,7 +12,7 @@ namespace Client
         {
             // discover endpoints from metadata
             var client = new HttpClient();
-            var disco = await client.GetDiscoveryDocumentAsync("https://localhost:5001");
+            var disco = await client.GetDiscoveryDocumentAsync("https://localhost:49165");
             if (disco.IsError)
             {
                 Console.WriteLine(disco.Error);
